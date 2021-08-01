@@ -40,13 +40,11 @@ class Solution(object):
                     max_len = len(t)
             else:
                 for item in t:
-                    if item != s[i]:
-                        t = t[1:]
-                    else:
-                        t = t[1:]
+                    t = t[1:]
+                    if item == s[i]:
                         t.append(s[i])
                         break
-                # 思考：else 下面的代码块（row 42~48）可以用以下代码来代替
+                # 思考：else 下面的代码块（row 42~46）可以用以下代码来代替
                 # t = t[t.index(s[i])+1:]
                 # t.append(s[i])
         return max_len
