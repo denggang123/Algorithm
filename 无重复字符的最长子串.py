@@ -46,4 +46,7 @@ class Solution(object):
                         t = t[1:]
                         t.append(s[i])
                         break
+                # 思考：else 下面的代码块（row 42~48）可以用以下代码来代替
+                # t = t[t.index(s[i])+1:]
+                # t.append(s[i])
         return max_len
