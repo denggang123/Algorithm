@@ -56,14 +56,12 @@ if __name__ == '__main__':
     a3 = ListNode(3)
     a1.next = a2
     a2.next = a3
-    a3.next = None
 
     b1 = ListNode(7)
     b2 = ListNode(0)
     b3 = ListNode(8)
     b1.next = b2
     b2.next = b3
-    b3.next = None
 
     s = Solution()
     res = s.addTwoNumbers(a1, b1)
